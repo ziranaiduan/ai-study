@@ -1,0 +1,21 @@
+# 虚拟环境
+.venv/
+venv/
+
+# 密钥与本地配置
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# agent 运行输出
+agent_workspace/
+
+# macOS
+.DS_Store

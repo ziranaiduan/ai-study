@@ -1,0 +1,5 @@
+langchain-openai==1.7.2
+deepagents==0.7.25
+python-dotenv==1.2.4
+akshare==1.19.1
+pandas==3.0.6
