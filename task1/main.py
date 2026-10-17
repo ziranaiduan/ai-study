@@ -117,7 +117,7 @@ agent = create_deep_agent(
 - 包含：行情概览、热点解读、投资建议
 - 投资建议需包含风险提示
 - 文件路径使用 /reports/ 前缀""",
-    backend=FilesystemBackend(root_dir="./agent_workspace", virtual_mode=True),
+    backend=FilesystemBackend(root_dir="../agent_workspace", virtual_mode=True),
 )
 
 # ========== 4. 运行 ==========
@@ -132,7 +132,7 @@ result = agent.invoke({
 # ========== 5. 验证文件是否落盘 ==========
 import os
 
-report_path = "./agent_workspace/reports/a_stock_report.md"
+report_path = "../agent_workspace/reports/a_stock_report.md"
 if os.path.exists(report_path):
     print(f"\n✅ 报告已写入：{report_path}")
     print("\n" + "=" * 60)
